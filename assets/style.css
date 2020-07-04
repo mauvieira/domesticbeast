@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  line-height: 115%;
+}
+
+p {
+  line-height: 125%;
+}
+
+button,
+a {
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  outline: none;
+}
