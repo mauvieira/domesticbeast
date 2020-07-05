@@ -54,6 +54,13 @@ a {
     "footer footer footer";
 }
 
+.widecolumn {
+  grid-column: 1 / -1;
+}
+.row-double {
+  grid-row: span 2;
+}
+
 /* ---- Navbar ---- */
 .header {
   grid-area: header;
@@ -114,6 +121,19 @@ a {
 /* ---- Content ---- */
 .content {
   grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.image__first {
+  align-self: end;
+}
+.image__second {
+  align-self: end;
 }
 
 /* ---- Advertising ---- */
