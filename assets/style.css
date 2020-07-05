@@ -44,3 +44,29 @@ a {
   border: 0;
   outline: none;
 }
+
+.estrutura {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+  grid-template-areas:
+    "header header header"
+    "sidebar content advertising"
+    "footer footer footer";
+  gap: 20px;
+}
+
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.content {
+  grid-area: content;
+}
+.advertising {
+  grid-area: advertising;
+}
+.footer{
+  grid-area: footer;
+}
