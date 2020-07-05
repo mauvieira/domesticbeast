@@ -52,7 +52,6 @@ a {
     "header header header"
     "sidebar content advertising"
     "footer footer footer";
-  gap: 30px;
 }
 
 /* ---- Navbar ---- */
@@ -101,25 +100,40 @@ a {
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
   padding: 20px;
   border-radius: 8px;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 
   min-width: 100px;
   max-width: 150px;
   margin: 0 auto 30px auto;
 }
 
-.sidebar__menu li a:hover { 
+.sidebar__menu li a:hover {
   background: #a38ee9;
 }
-
 
 /* ---- Content ---- */
 .content {
   grid-area: content;
 }
+
+/* ---- Advertising ---- */
 .advertising {
   grid-area: advertising;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: start;
+  padding: 30px;
+  gap: 30px;
 }
+.anuncio-item img {
+  border-radius: 8px;
+}
+
+/* ---- Footer ---- */
 .footer {
   grid-area: footer;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  text-align: center;
+  padding: 30px 0;
+  color: #fafbfc;
 }
