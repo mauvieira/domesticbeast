@@ -94,6 +94,11 @@ a {
   background: #7159c1;
 }
 
+.hamburguer {
+  max-width: 40px;
+  display: none;
+}
+
 /* ---- Sidebar ---- */
 .sidebar {
   grid-area: sidebar;
@@ -195,9 +200,9 @@ a {
 
 .break p {
   color: #fafbfc;
-  max-width: 350px;
+  max-width: 300px;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-style: italic;
 }
 
@@ -206,7 +211,7 @@ a {
   color: #fafbfc;
   padding: 30px;
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 8px;
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.14);
 }
@@ -237,4 +242,49 @@ a {
   text-align: center;
   padding: 30px 0;
   color: #fafbfc;
+}
+
+@media (max-width: 992px) {
+  .estrutura {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "advertising"
+      "footer";
+  }
+  .header__menu {
+    display: none;
+  }
+  .hamburguer {
+    display: block;
+  }
+  .sidebar{
+    overflow: auto;
+  }
+  .sidebar__menu {
+    display: flex;
+  }
+  .sidebar__menu li{
+    flex: 1 0 60px;
+  }
+  .sidebar__menu li a{
+    margin: 0;
+  }
+  .sidebar__menu li + li{
+    margin-left: 30px;
+  }
+
+  .content{
+    grid-template-columns: auto;
+  }
+  .content img {
+    width: 100%;
+  }
+
+  .break {
+    padding: 30px;
+  }
+
 }
