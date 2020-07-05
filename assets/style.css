@@ -52,12 +52,43 @@ a {
     "header header header"
     "sidebar content advertising"
     "footer footer footer";
-  gap: 20px;
+  gap: 30px;
 }
 
+/* ---- Navbar ---- */
 .header {
   grid-area: header;
+  color: #f6f6f6;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 }
+.logo {
+  max-width: 200px;
+  display: block;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu li + li{
+  margin-left: 10px;
+}
+.header__menu li a {
+  color: #f6f6f6;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+  transition: all .3s ease-in;
+  border-radius: 8px;
+}
+.header__menu li a:hover {
+  background: #7159c1;
+}
+
+/* ---- Sidebar ---- */
 .sidebar {
   grid-area: sidebar;
 }
@@ -67,6 +98,6 @@ a {
 .advertising {
   grid-area: advertising;
 }
-.footer{
+.footer {
   grid-area: footer;
 }
