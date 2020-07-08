@@ -6,6 +6,10 @@
 
 Page created covering various concepts of css grid, also extolling the beauty of gray wolves.
 
-![](wildbeast.gif)
+## 🖥️ Desktop
+![](desktop.gif)
+
+## 📱 Mobile
+![](mobile.gif)
 
 Project made up in this [course](https://www.origamid.com/curso/css-grid-layout/)
